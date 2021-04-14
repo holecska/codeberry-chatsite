@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$color-primary: #6200EA;
+$color-secondary: #211138;
+$color-grey-dark: #B2ACBA;
+$color-grey-light: #F4F3F5;
+$color-white: #fff;
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+//MEDIA QUERIES
+$bp-large: 75em; //1200px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-xs: 26.25em; // 600px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [contact-start] 25% [contact-end chat-start] 75% [chat-end];
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: [contact-start] 35% [contact-end chat-start] 65% [chat-end];
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+}

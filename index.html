@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Chat Site</title>
+    <script src="https://kit.fontawesome.com/3ad538c219.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="container" onresize="contactDisplay()">
+    <div class="contact-box" id="contact">
+      <div class="contact-box__search">
+        <form action="#" class="search-form">
+          <input onfocus="this.value=''" id="search" class="search-form__input" type="text" placeholder="Search">
+          <i class="fas fa-search search-form__icon"></i>
+        </form>
+        <div class="closebtn" onclick="closeNav()">
+          &times;
+        </div>
+
+      </div>
+      <div class="contact-box__contact">
+        <div class="contact contact--active">
+
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_01.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Amy Adams</h2>
+            <p class="contact__text">Lorem ipsum dolor sit amet, consetetur</p>
+          </div>
+
+        </div>
+        <div class="contact">
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_02.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Marc</h2>
+            <p class="contact__text">Sed diam nonumy eirmod tempor invidunt</p>
+          </div>
+
+        </div>
+
+        <div class="contact">
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_03.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Jacob</h2>
+            <p class="contact__text">😀</p>
+          </div>
+
+        </div>
+
+        <div class="contact">
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_04.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Chris Smith</h2>
+            <p class="contact__text">At vero eos et accusam et justo duo dolores</p>
+          </div>
+
+        </div>
+
+
+        <div class="contact">
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_05.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Mia Wong</h2>
+            <p class="contact__text">Stet clita kasd gubergren.</p>
+          </div>
+
+        </div>
+
+        <div class="contact">
+          <div class="contact__picture-box">
+            <img src="img/user_avatar_06.png" alt="User Photo" class="contact__picture">
+          </div>
+
+          <div class="contact__content">
+            <h2 class="contact__name">Jane</h2>
+            <p class="contact__text">Lorem ipsum dolor sit amet, consetetur</p>
+          </div>
+
+        </div>
+        <div class="contact--btn">
+          <button class="btn">Add new contact</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="chat">
+      <div class="chat__header">
+        <div class="chat__header__bar" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <h2 class="chat__header__receiver">Amy Adams</h2>
+        <img src="img/user_avatar_01.png" alt="Message Receiver Picture" class="chat__header__receiver--picture">
+        <img src="img/logo_50.svg" alt="Logo" class="chat__header__logo">
+        <div class="chat__header__sender">
+          <p class="chat__header__sender--name">Adam Holecska</p>
+          <img src="img/user_avatar_07.png" alt="Message Sender Picture" class="chat__header__sender--picture">
+        </div>
+      </div>
+      <div class="chat__messages">
+        <!-- SECTION 1: Amy Messages -->
+        <p class="chat__messages__received chat__messages__received--01">Amy, 11:37</p>
+        <img src="img/user_avatar_01.png" alt="Profile Picture Amy Adams" class="chat__messages__sender chat__messages__sender--01">
+        <p class="chat__messages__text chat__messages__text-white chat__messages__text-white--01">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <p class="chat__messages__text chat__messages__text-white chat__messages__text-white--02">At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+        <!-- SECTION 2: Student Messages -->
+        <p class="chat__messages__received chat__messages__received--02">11:40</p>
+        <div class="chat__messages__text-grey-box">
+          <p class="chat__messages__text chat__messages__text-grey chat__messages__text-grey--01">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="chat__messages__sender--02">
+          <img src="img/user_avatar_07.png" alt="Profile Picture Avatar-07" class="chat__messages__sender">
+        </div>
+
+        <!-- SECTION 3: Amy Messages -->
+        <p class="chat__messages__received chat__messages__received--01">Amy, 12:04</p>
+        <img src="img/user_avatar_01.png" alt="Profile Picture Amy Adams" class="chat__messages__sender chat__messages__sender--01">
+        <p class="chat__messages__text chat__messages__text-white chat__messages__text-white--01">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+        <!-- SECTION 4: Student Messages -->
+        <p class="chat__messages__received chat__messages__received--02">12:06</p>
+        <div class="chat__messages__text-grey-box">
+          <p class="chat__messages__text chat__messages__text-grey chat__messages__text-grey--02">At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        </div>
+        <div class="chat__messages__text-grey-box">
+          <p class="chat__messages__text chat__messages__text-grey chat__messages__text-grey--03">Stet clita kasd gubergren.</p>
+        </div>
+        <div class="chat__messages__sender--02">
+          <img src="img/user_avatar_07.png" alt="Profile Picture Avatar-07" class="chat__messages__sender">
+        </div>
+
+        <!-- SECTION 5: ... Typing -->
+        <p class="chat__messages__received mb-none">Amy is typing...</p>
+
+      </div>
+      <div class="chat__input">
+
+          <form action="#" class="form">
+            <textarea class="form__textarea" placeholder="Type your message..."></textarea>
+            <i class="fas fa-paperclip form__attachment"></i>
+            <i class="far fa-smile form__smile"></i>
+          </form>
+
+
+        <div class="send">
+          <i class="far fa-paper-plane send__icon"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("contact").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("contact").style.display = "none";
+
+      }
+
+      function contactDisplay() {
+        var w = window.innerWidth;
+        if (w>600){
+          document.getElementById("contact").style.display = "block";
+        } else{
+          document.getElementById("contact").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
